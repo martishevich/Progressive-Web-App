@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="theme-color" content="#317EFB">
     <meta charset="utf-8">
     <link rel="manifest" href="/manifest.json">
     <title>100% PWA</title>
   </head>
   <body>
     Hello world!
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+          .register('sw.js')
+      }
+    </script>
   </body>
 </html>
