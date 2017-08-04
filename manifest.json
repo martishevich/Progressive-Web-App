@@ -1,0 +1,12 @@
+{
+  "short_name": "100% PWA",
+  "name": "100% Progressive Web App",
+  "icons": [
+    {
+      "src": "ipwa_1x.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "index.html"
+}
