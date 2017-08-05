@@ -1,3 +1,4 @@
+const OFFLINE_URL =  '/';
 self.addEventListener('install', function(e) {
   e.waitUntil(
       caches.open('airhorner').then(function(cache) {
@@ -9,4 +10,14 @@ self.addEventListener('install', function(e) {
   );
 });
 
-
+self.addEventListener('fetch', event => {
+  if (event.request.mode === 'navigate' ||
+      (event.request.method === 'GET' &&
+       event.request.headers.get('accept').includes('text/html'))) {
+    event.respondWith(
+      fetch(event.request).catch(error => {
+        return caches.match(OFFLINE_URL);
+      })
+    );
+  }
+});
