@@ -9,6 +9,11 @@
       "src": "ipwa_1x.png",
       "type": "image/png",
       "sizes": "192x192"
+    },
+    {
+      "src": "ipwa_1x.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": "/Progressive-Web-App/index.html",
