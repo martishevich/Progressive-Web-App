@@ -11,5 +11,6 @@
       "sizes": "192x192"
     }
   ],
-  "start_url": "/Progressive-Web-App/index.html"
+  "start_url": "/Progressive-Web-App/index.html",
+  "splash_images": null
 }
